@@ -1,0 +1,147 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Main Section */
+.main-section {
+    display: flex;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.column {
+    flex: 1;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.column h2 {
+    margin-bottom: 15px;
+}
+
+.column ul {
+    list-style: none;
+}
+
+.column ul li {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+/* Reviews */
+.reviews {
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.review-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.review-card {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+/* Footer */
+footer {
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .header-top {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .main-section {
+        flex-direction: column;
+    }
+
+    .review-container {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
